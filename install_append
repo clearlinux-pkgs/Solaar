@@ -1,0 +1,1 @@
+install -Dm0644 rules.d/42-logitech-unify-permissions.rules %{buildroot}%/usr/lib/udev/rules.d/42-logitech-unify-permissions.rules
