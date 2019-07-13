@@ -4,7 +4,7 @@
 #
 Name     : Solaar
 Version  : 0.9.2
-Release  : 1
+Release  : 2
 URL      : https://github.com/pwr/Solaar/archive/0.9.2.tar.gz
 Source0  : https://github.com/pwr/Solaar/archive/0.9.2.tar.gz
 Summary  : No detailed summary available
