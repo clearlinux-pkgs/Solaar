@@ -4,7 +4,7 @@
 #
 Name     : Solaar
 Version  : 0.9.2
-Release  : 2
+Release  : 3
 URL      : https://github.com/pwr/Solaar/archive/0.9.2.tar.gz
 Source0  : https://github.com/pwr/Solaar/archive/0.9.2.tar.gz
 Summary  : No detailed summary available
@@ -15,7 +15,9 @@ Requires: Solaar-data = %{version}-%{release}
 Requires: Solaar-license = %{version}-%{release}
 Requires: Solaar-python = %{version}-%{release}
 Requires: Solaar-python3 = %{version}-%{release}
+Requires: pyudev
 BuildRequires : buildreq-distutils3
+BuildRequires : pyudev
 
 %description
 **Solaar** is a Linux device manager for Logitech's [Unifying Receiver][unifying]
@@ -82,8 +84,13 @@ python3 components for the Solaar package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1547769061
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1563400741
+export GCC_IGNORE_WERROR=1
+export CFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$CFLAGS -fno-lto "
+export FFLAGS="$CFLAGS -fno-lto "
+export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
