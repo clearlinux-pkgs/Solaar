@@ -4,7 +4,7 @@
 #
 Name     : Solaar
 Version  : 1.0.1
-Release  : 4
+Release  : 6
 URL      : https://github.com/pwr/Solaar/archive/1.0.1.tar.gz
 Source0  : https://github.com/pwr/Solaar/archive/1.0.1.tar.gz
 Summary  : No detailed summary available
@@ -77,7 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1572908112
+export SOURCE_DATE_EPOCH=1573511883
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -110,22 +110,22 @@ install -Dm0644 rules.d/42-logitech-unify-permissions.rules %{buildroot}%/usr/li
 %files extras
 %defattr(-,root,root,-)
 /usr/bin/solaar
-/usr/lib/python3.7/site-packages/solaar/__pycache__/gtk.cpython-37.pyc
-/usr/lib/python3.7/site-packages/solaar/ui/__init__.py
-/usr/lib/python3.7/site-packages/solaar/ui/__pycache__/about.cpython-37.pyc
-/usr/lib/python3.7/site-packages/solaar/ui/__pycache__/action.cpython-37.pyc
-/usr/lib/python3.7/site-packages/solaar/ui/__pycache__/icons.cpython-37.pyc
-/usr/lib/python3.7/site-packages/solaar/ui/__pycache__/notify.cpython-37.pyc
-/usr/lib/python3.7/site-packages/solaar/ui/__pycache__/pair_window.cpython-37.pyc
-/usr/lib/python3.7/site-packages/solaar/ui/__pycache__/tray.cpython-37.pyc
-/usr/lib/python3.7/site-packages/solaar/ui/about.py
-/usr/lib/python3.7/site-packages/solaar/ui/action.py
-/usr/lib/python3.7/site-packages/solaar/ui/config_panel.py
-/usr/lib/python3.7/site-packages/solaar/ui/icons.py
-/usr/lib/python3.7/site-packages/solaar/ui/notify.py
-/usr/lib/python3.7/site-packages/solaar/ui/pair_window.py
-/usr/lib/python3.7/site-packages/solaar/ui/tray.py
-/usr/lib/python3.7/site-packages/solaar/ui/window.py
+/usr/lib/python3.8/site-packages/solaar/__pycache__/gtk.cpython-38.pyc
+/usr/lib/python3.8/site-packages/solaar/ui/__init__.py
+/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/about.cpython-38.pyc
+/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/action.cpython-38.pyc
+/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/icons.cpython-38.pyc
+/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/notify.cpython-38.pyc
+/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/pair_window.cpython-38.pyc
+/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/tray.cpython-38.pyc
+/usr/lib/python3.8/site-packages/solaar/ui/about.py
+/usr/lib/python3.8/site-packages/solaar/ui/action.py
+/usr/lib/python3.8/site-packages/solaar/ui/config_panel.py
+/usr/lib/python3.8/site-packages/solaar/ui/icons.py
+/usr/lib/python3.8/site-packages/solaar/ui/notify.py
+/usr/lib/python3.8/site-packages/solaar/ui/pair_window.py
+/usr/lib/python3.8/site-packages/solaar/ui/tray.py
+/usr/lib/python3.8/site-packages/solaar/ui/window.py
 /usr/share/applications/solaar.desktop
 /usr/share/icons/hicolor/scalable/apps/solaar.svg
 /usr/share/solaar/icons/light_000.png
