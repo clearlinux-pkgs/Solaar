@@ -4,10 +4,10 @@
 #
 Name     : Solaar
 Version  : 1.0.1
-Release  : 8
+Release  : 9
 URL      : https://github.com/pwr/Solaar/archive/1.0.1.tar.gz
 Source0  : https://github.com/pwr/Solaar/archive/1.0.1.tar.gz
-Summary  : No detailed summary available
+Summary  : Linux device manager for a wide range of Logitech devices
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: Solaar-bin = %{version}-%{release}
@@ -77,7 +77,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1573511883
+export SOURCE_DATE_EPOCH=1582921055
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
