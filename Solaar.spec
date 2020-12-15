@@ -4,10 +4,10 @@
 #
 Name     : Solaar
 Version  : 1.0.1
-Release  : 13
+Release  : 14
 URL      : https://github.com/pwr/Solaar/archive/1.0.1.tar.gz
 Source0  : https://github.com/pwr/Solaar/archive/1.0.1.tar.gz
-Summary  : Linux device manager for a wide range of Logitech devices
+Summary  : Linux devices manager for the Logitech Unifying Receiver.
 Group    : Development/Tools
 License  : GPL-2.0
 Requires: Solaar-bin = %{version}-%{release}
@@ -63,6 +63,8 @@ python components for the Solaar package.
 Summary: python3 components for the Solaar package.
 Group: Default
 Requires: python3-core
+Provides: pypi(solaar)
+Requires: pypi(pyudev)
 
 %description python3
 python3 components for the Solaar package.
@@ -77,12 +79,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582921055
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1607992441
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
@@ -111,22 +112,22 @@ install -Dm0644 rules.d/42-logitech-unify-permissions.rules %{buildroot}%/usr/li
 %files extras
 %defattr(-,root,root,-)
 /usr/bin/solaar
-/usr/lib/python3.8/site-packages/solaar/__pycache__/gtk.cpython-38.pyc
-/usr/lib/python3.8/site-packages/solaar/ui/__init__.py
-/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/about.cpython-38.pyc
-/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/action.cpython-38.pyc
-/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/icons.cpython-38.pyc
-/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/notify.cpython-38.pyc
-/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/pair_window.cpython-38.pyc
-/usr/lib/python3.8/site-packages/solaar/ui/__pycache__/tray.cpython-38.pyc
-/usr/lib/python3.8/site-packages/solaar/ui/about.py
-/usr/lib/python3.8/site-packages/solaar/ui/action.py
-/usr/lib/python3.8/site-packages/solaar/ui/config_panel.py
-/usr/lib/python3.8/site-packages/solaar/ui/icons.py
-/usr/lib/python3.8/site-packages/solaar/ui/notify.py
-/usr/lib/python3.8/site-packages/solaar/ui/pair_window.py
-/usr/lib/python3.8/site-packages/solaar/ui/tray.py
-/usr/lib/python3.8/site-packages/solaar/ui/window.py
+/usr/lib/python3.9/site-packages/solaar/__pycache__/gtk.cpython-39.pyc
+/usr/lib/python3.9/site-packages/solaar/ui/__init__.py
+/usr/lib/python3.9/site-packages/solaar/ui/__pycache__/about.cpython-39.pyc
+/usr/lib/python3.9/site-packages/solaar/ui/__pycache__/action.cpython-39.pyc
+/usr/lib/python3.9/site-packages/solaar/ui/__pycache__/icons.cpython-39.pyc
+/usr/lib/python3.9/site-packages/solaar/ui/__pycache__/notify.cpython-39.pyc
+/usr/lib/python3.9/site-packages/solaar/ui/__pycache__/pair_window.cpython-39.pyc
+/usr/lib/python3.9/site-packages/solaar/ui/__pycache__/tray.cpython-39.pyc
+/usr/lib/python3.9/site-packages/solaar/ui/about.py
+/usr/lib/python3.9/site-packages/solaar/ui/action.py
+/usr/lib/python3.9/site-packages/solaar/ui/config_panel.py
+/usr/lib/python3.9/site-packages/solaar/ui/icons.py
+/usr/lib/python3.9/site-packages/solaar/ui/notify.py
+/usr/lib/python3.9/site-packages/solaar/ui/pair_window.py
+/usr/lib/python3.9/site-packages/solaar/ui/tray.py
+/usr/lib/python3.9/site-packages/solaar/ui/window.py
 /usr/share/applications/solaar.desktop
 /usr/share/icons/hicolor/scalable/apps/solaar.svg
 /usr/share/solaar/icons/light_000.png
