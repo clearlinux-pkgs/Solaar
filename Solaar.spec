@@ -5,7 +5,7 @@
 #
 Name     : Solaar
 Version  : 1.1.10
-Release  : 27
+Release  : 28
 URL      : https://github.com/pwr/Solaar/archive/1.1.10/Solaar-1.1.10.tar.gz
 Source0  : https://github.com/pwr/Solaar/archive/1.1.10/Solaar-1.1.10.tar.gz
 Summary  : Linux device manager for Logitech receivers, keyboards, mice, and tablets.
@@ -69,6 +69,7 @@ Summary: python3 components for the Solaar package.
 Group: Default
 Requires: python3-core
 Provides: pypi(solaar)
+Requires: dbus-python
 Requires: pypi(dbus_python)
 Requires: pypi(evdev)
 Requires: pypi(psutil)
@@ -92,7 +93,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1695765794
+export SOURCE_DATE_EPOCH=1695831590
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
