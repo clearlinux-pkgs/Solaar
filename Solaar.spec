@@ -5,7 +5,7 @@
 #
 Name     : Solaar
 Version  : 1.1.10
-Release  : 28
+Release  : 29
 URL      : https://github.com/pwr/Solaar/archive/1.1.10/Solaar-1.1.10.tar.gz
 Source0  : https://github.com/pwr/Solaar/archive/1.1.10/Solaar-1.1.10.tar.gz
 Summary  : Linux device manager for Logitech receivers, keyboards, mice, and tablets.
