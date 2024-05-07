@@ -1,1 +1,7 @@
 dbus-python
+pypi(dbus_python)
+pypi(evdev)
+pypi(psutil)
+pypi(python_xlib)
+pypi(pyudev)
+pypi(pyyaml)
