@@ -7,7 +7,7 @@
 #
 Name     : Solaar
 Version  : 1.1.12
-Release  : 33
+Release  : 34
 URL      : https://github.com/pwr/Solaar/archive/1.1.12/Solaar-1.1.12.tar.gz
 Source0  : https://github.com/pwr/Solaar/archive/1.1.12/Solaar-1.1.12.tar.gz
 Summary  : No detailed summary available
@@ -77,6 +77,7 @@ Requires: dbus-python
 Requires: pypi(dbus_python)
 Requires: pypi(evdev)
 Requires: pypi(psutil)
+Requires: pypi(pygobject)
 Requires: pypi(python_xlib)
 Requires: pypi(pyudev)
 Requires: pypi(pyyaml)
@@ -97,7 +98,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1715107613
+export SOURCE_DATE_EPOCH=1715112460
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
