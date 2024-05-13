@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : Solaar
-Version  : 1.1.12
-Release  : 34
-URL      : https://github.com/pwr/Solaar/archive/1.1.12/Solaar-1.1.12.tar.gz
-Source0  : https://github.com/pwr/Solaar/archive/1.1.12/Solaar-1.1.12.tar.gz
+Version  : 1.1.13
+Release  : 35
+URL      : https://github.com/pwr/Solaar/archive/1.1.13/Solaar-1.1.13.tar.gz
+Source0  : https://github.com/pwr/Solaar/archive/1.1.13/Solaar-1.1.13.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -87,10 +87,10 @@ python3 components for the Solaar package.
 
 
 %prep
-%setup -q -n Solaar-1.1.12
-cd %{_builddir}/Solaar-1.1.12
+%setup -q -n Solaar-1.1.13
+cd %{_builddir}/Solaar-1.1.13
 pushd ..
-cp -a Solaar-1.1.12 buildavx2
+cp -a Solaar-1.1.13 buildavx2
 popd
 
 %build
@@ -98,7 +98,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1715112460
+export SOURCE_DATE_EPOCH=1715630890
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
