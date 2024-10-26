@@ -7,7 +7,7 @@
 #
 Name     : Solaar
 Version  : 1.1.13
-Release  : 36
+Release  : 37
 URL      : https://github.com/pwr/Solaar/archive/1.1.13/Solaar-1.1.13.tar.gz
 Source0  : https://github.com/pwr/Solaar/archive/1.1.13/Solaar-1.1.13.tar.gz
 Summary  : No detailed summary available
